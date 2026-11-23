@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSD-8 Processor Project</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #263247;
+    line-height: 1.7;
+}
+
+header {
+    background: #14284b;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+nav {
+    background: #203b64;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+section {
+    background: white;
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #18365e;
+}
+
+.modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.module {
+    background: #edf3fb;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #14284b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>DSD-8 Processor</h1>
+<h2 style="color:white;">With 16-bit Timer and Watchdog Timer</h2>
+<p>Digital System Design Project</p>
+<p>Semester 7 | Electrical Engineering</p>
+</header>
+
+<nav>
+<a href="#overview">Overview</a>
+<a href="#architecture">Architecture</a>
+<a href="#modules">Modules</a>
+<a href="#simulation">Simulation</a>
+<a href="#team">Team</a>
+</nav>
+
+<section id="overview">
+<h2>Project Overview</h2>
+<p>
+This project implements an 8-bit processor with two additional
+peripherals: a 16-bit Timer and a Watchdog Timer.
+The system is designed using Verilog HDL and verified through
+simulation and testing.
+</p>
+</section>
+
+<section id="architecture">
+<h2>Processor Architecture</h2>
+<p>
+The processor consists of a program counter, instruction memory,
+instruction decoder, register file, ALU, control unit,
+data memory and I/O interface.
+</p>
+<p>Add your processor architecture diagram here.</p>
+</section>
+
+<section id="modules">
+<h2>Additional Modules</h2>
+
+<div class="modules">
+
+<div class="module">
+<h3>16-bit Timer</h3>
+<p>
+Counts clock pulses using a 16-bit counter.
+Supports timer control, prescaling and timeout/interrupt status.
+</p>
+</div>
+
+<div class="module">
+<h3>Watchdog Timer</h3>
+<p>
+Monitors processor operation. The CPU periodically sends
+a Kick signal. If timeout occurs, the watchdog requests
+a processor reset.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="simulation">
+<h2>Simulation Results</h2>
+<p>
+Add your Verilog testbench waveforms, simulation screenshots,
+test results and synthesis reports here.
+</p>
+</section>
+
+<section id="team">
+<h2>Project Team</h2>
+<p>Add your team members' names and contributions here.</p>
+</section>
+
+<footer>
+<p>DSD-8 Processor Project | Digital System Design</p>
+<p>Electrical Engineering | 2026</p>
+</footer>
+
+</body>
+</html>
